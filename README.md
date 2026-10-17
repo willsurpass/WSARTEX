@@ -36,23 +36,7 @@
 
 ## 启动
 
-1. 安装 **Python 3.8 或更高版本**。Windows 安装时勾选「Add Python to PATH」。
-2. 下载并解压整个项目，或通过 Git 克隆仓库，在终端进入项目根目录。
-3. 运行启动器，按提示安装缺失的依赖并启动：
-
-   macOS / Linux：
-
-   ```bash
-   python3 start.py
-   ```
-
-   Windows：
-
-   ```powershell
-   python start.py
-   ```
-
-首次启动需要联网安装依赖。启动器会准备 PostgreSQL、构建程序并打开浏览器，**无需 Docker，也无需手动创建 `data/` 文件夹**；全新安装时会自动生成本地配置和登录签名密钥。
+运行 `start.py`。
 
 ## 首次使用
 
@@ -61,21 +45,9 @@
 3. 打开「任务」，创建任务，写明本地隔离靶场的目标、范围和约束，然后启动。
 4. 在任务详情中查看执行过程、探索链路与发现。
 
-## 停止与更新
+## 停止
 
-macOS / Linux：
-
-```bash
-python3 quit.py
-```
-
-Windows：
-
-```powershell
-python quit.py
-```
-
-停止服务会保留数据，PostgreSQL 系统服务不会随之停止。更新源码后重新运行 `start.py` 即可，详细步骤见[更新说明](README.detailed.md#更新)。
+双击 `quit.py`。
 
 ## 清除数据
 
