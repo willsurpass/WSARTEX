@@ -7,7 +7,7 @@
 ### 项目定位
 
 WSARTEX 是一套**本地运行**的 LLM 多 agent 自主渗透测试系统：Go 单体后端（内嵌 Next.js 前端）+ PostgreSQL。
-仅面向本地隔离靶场与学习研究使用，详见[详细说明中的「许可与免责声明」](README.detailed.md#许可与免责声明)。
+建议先在本地隔离靶场中学习与验证，实际使用须依法取得必要授权，详见[详细说明中的「许可与免责声明」](README.detailed.md#许可与免责声明)。
 
 ### 本地化改造
 
@@ -35,4 +35,8 @@ WSARTEX 是一套**本地运行**的 LLM 多 agent 自主渗透测试系统：Go
 
 ### 许可
 
-本项目采用 **GNU Affero General Public License v3.0（AGPL-3.0）** 授权，完整条款见根目录 [LICENSE](LICENSE)。
+本项目沿用 ARTEX 的 AGPL 许可体系，明确为 **AGPL-3.0-or-later**，完整条款见根目录 [LICENSE](LICENSE)。
+
+- 2026-10-18：整理标准 LICENSE 正文，新增 [NOTICE.md](NOTICE.md)，补充 ARTEX 来源、WSARTEX 修改说明及第三方版权。
+- README 与登录页统一许可证说明，将“仅限学习”等用途限制改为使用建议和依法授权的提示。
+- 补充 norma/noa 中 acp-kernel 衍生内容的原始许可文本，保留前端模板与 vendor 中已有的许可证。

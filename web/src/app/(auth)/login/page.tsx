@@ -26,7 +26,7 @@ export default function LoginPage() {
   const [readToEnd, setReadToEnd] = useState(false);
   const termsBodyRef = useRef<HTMLDivElement>(null);
 
-  // 滚动到条款底部（含无需滚动即可完整展示的情况）方可点击「同意」。
+  // 滚动到条款底部（含无需滚动即可完整展示的情况）方可点击「确认」。
   function handleTermsScroll() {
     const el = termsBodyRef.current;
     if (!el) return;
@@ -63,7 +63,7 @@ export default function LoginPage() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!agreed) {
-      setError("请先阅读并同意《使用须知》");
+      setError("请先阅读并了解《使用须知》");
       return;
     }
     setLoading(true);
@@ -130,7 +130,7 @@ export default function LoginPage() {
                 className="mt-0.5"
               />
               <Label htmlFor="agree-terms" className="text-sm font-normal leading-relaxed text-muted-foreground">
-                我已阅读并同意
+                我已阅读并了解
                 <button
                   type="button"
                   onClick={() => setTermsOpen(true)}
@@ -157,7 +157,7 @@ export default function LoginPage() {
             <div className="space-y-0.5">
               <DialogTitle className="text-base">WSARTEX 使用须知与免责声明</DialogTitle>
               <p className="text-xs text-muted-foreground">
-                版本 v1.0 · 生效日期 2026-09-18 · 请在登录前完整阅读以下全部条款
+                版本 v1.1 · 更新日期 2026-10-18 · 请在登录前阅读以下许可与使用提示
               </p>
             </div>
           </DialogHeader>
@@ -168,12 +168,8 @@ export default function LoginPage() {
             className="max-h-[60vh] space-y-5 overflow-y-auto px-6 py-5 text-sm leading-relaxed text-muted-foreground"
           >
             <p className="rounded-lg border bg-muted/40 p-3 text-foreground/80">
-              本《使用须知与免责声明》（以下简称"本声明"）是您与 WSARTEX
-              项目作者及贡献者之间就使用本软件所达成的约定。请您在使用前审慎阅读、充分理解各条款内容，特别是以粗体或色块标注的免责、责任限制及禁止性条款。
-              <span className="font-medium text-foreground">
-                {" "}
-                一旦您下载、安装、访问或以任何方式使用本软件，即视为您已阅读、理解并同意接受本声明的全部约束。
-              </span>
+              本声明介绍 WSARTEX 的开源许可、使用建议及风险。软件许可权利义务以随附的 LICENSE
+              及第三方许可证为准；使用建议不构成对开源许可证所授予权利的额外限制。
             </p>
 
             <section className="space-y-1.5">
@@ -184,9 +180,18 @@ export default function LoginPage() {
                 第一条 · 定义与开源许可
               </h4>
               <p className="pl-7">
-                本软件（WSARTEX）是一款基于 GNU Affero General Public License
-                v3.0（AGPL-3.0）发布的开源程序。您可依据该协议自由使用、复制、修改和分发本软件；但任何衍生作品（包括通过网络向第三方提供的在线服务）均须同样以
-                AGPL-3.0 协议开源并向使用者公开对应的完整源代码。AGPL-3.0 完整条款以随附的 LICENSE 文件为准。
+                本软件基于 ARTEX 修改，采用 GNU Affero General Public License 第 3 版或后续版本（AGPL-3.0-or-later）。
+                您可按协议使用、复制、修改和分发，也可商业使用。分发时须保留许可及版权声明，并按协议提供对应源码；修改版支持用户通过网络交互时，须向这些用户免费提供完整对应源码的获取方式。
+                第三方组件仍适用各自许可证，来源与版权见仓库 NOTICE.md。源码与修改记录可在
+                <a
+                  className="mx-0.5 text-primary underline underline-offset-4"
+                  href="https://github.com/willsurpass/WSARTEX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WSARTEX 仓库
+                </a>
+                查看。
               </p>
             </section>
 
@@ -195,10 +200,11 @@ export default function LoginPage() {
                 <span className="flex size-5 items-center justify-center rounded-md bg-muted text-xs font-semibold text-muted-foreground">
                   2
                 </span>
-                第二条 · 授权使用范围
+                第二条 · 使用建议
               </h4>
               <p className="pl-7">
-                本软件仅供个人学习、代码研究、安全技术原理探讨，以及在您自行搭建的本地隔离环境中进行技术验证之用，适用于学习、学术研究、代码审阅等非攻击性、非破坏性用途。除本条明确许可的情形外，您不得将本软件用于任何其他目的。
+                建议先在本地隔离靶场中学习、研究和验证。对实际系统开展安全测试时，应事先取得必要授权，明确目标范围、测试方式和数据处理边界，并遵守适用法律法规。这些建议不限制
+                AGPL 所授予的权利，也不代替目标系统所有者的授权。
               </p>
             </section>
 
@@ -208,15 +214,12 @@ export default function LoginPage() {
                   3
                 </span>
                 <AlertTriangle className="size-4" />
-                第三条 · 禁止行为
+                第三条 · 合法使用与风险
               </h4>
               <ul className="ml-7 list-decimal space-y-1.5 rounded-lg border border-destructive/20 bg-destructive/5 p-3 pl-8 text-foreground/80 marker:text-destructive/70">
-                <li>
-                  严禁对任何网站、线上服务、他人或第三方所有的联网系统发起扫描、探测、利用或攻击（无论是否已获得授权、是否为您自有资产）；
-                </li>
-                <li>严禁将本软件用于任何实际的渗透测试、攻防对抗、红蓝演练或生产环境；</li>
+                <li>对系统开展安全测试前，请取得必要授权，并在约定范围和时间内操作；</li>
                 <li>严禁将本软件用于非法入侵、数据窃取、勒索、拒绝服务（DoS/DDoS）或任何破坏性、犯罪性活动；</li>
-                <li>严禁移除、篡改或规避本软件及其输出中的任何版权、许可或安全提示信息；</li>
+                <li>分发软件时，应按适用许可证保留相应版权、许可和免责声明；</li>
                 <li>严禁从事任何违反您所在国家或地区法律、法规及监管规定的行为。</li>
               </ul>
             </section>
@@ -229,8 +232,8 @@ export default function LoginPage() {
                 第四条 · 知识产权
               </h4>
               <p className="pl-7">
-                本软件的著作权及相关知识产权归项目作者及贡献者所有，并在 AGPL-3.0
-                协议约定的范围内向您授予相应权利。除该协议明确授予的权利外，本声明未以明示或默示方式授予您任何其他权利。
+                原始 ARTEX 代码的版权归原作者及贡献者所有，WSARTEX 新增和修改部分的版权归相应贡献者所有。
+                第三方组件保留各自版权与许可。相关来源与修改说明见仓库 NOTICE.md，软件权利义务以适用许可证为准。
               </p>
             </section>
 
@@ -242,7 +245,9 @@ export default function LoginPage() {
                 第五条 · 数据与隐私
               </h4>
               <p className="pl-7">
-                本软件为可自行部署的开源程序，作者不运营任何集中式服务、亦不会收集或上传您的使用数据。您在使用过程中产生、处理或接触的一切数据，均由您自行掌控并负责其合法性与安全性；因数据处理不当引发的任何后果由您自行承担。
+                本软件由您自行部署。配置
+                LLM、MCP、通知或其他外部服务后，相关请求可能包含任务内容、工具输出等数据，请自行评估接收方和数据处理范围。开源许可要求提供程序对应源码，不要求公开数据库、密码、API
+                Key 等运行数据或凭据。
               </p>
             </section>
 
@@ -257,7 +262,7 @@ export default function LoginPage() {
                 您应自行遵守所在国家或地区关于网络安全、数据安全与个人信息保护、计算机犯罪等方面的全部法律法规（在中国大陆包括但不限于《网络安全法》《数据安全法》《个人信息保护法》及相关司法解释）。
                 <span className="font-medium text-foreground">
                   {" "}
-                  因您违反上述法律法规或本声明约定而产生的一切法律责任与后果，均由您本人独立承担，与本软件作者及贡献者无关。
+                  使用者应保护数据、遵守测试授权范围，并依法承担相应责任。作者及贡献者的免责范围以适用许可证和法律为准。
                 </span>
               </p>
             </section>
@@ -280,10 +285,11 @@ export default function LoginPage() {
                 <span className="flex size-5 items-center justify-center rounded-md bg-muted text-xs font-semibold text-muted-foreground">
                   8
                 </span>
-                第八条 · 条款变更与最终解释
+                第八条 · 许可证与声明的关系
               </h4>
               <p className="pl-7">
-                作者有权根据法律法规或项目发展需要不时更新本声明，更新后的版本将随项目发布并自公布之日起生效；您继续使用本软件即视为接受修订后的条款。在法律允许的范围内，本声明的最终解释权归项目作者所有。若本声明任一条款被认定为无效，不影响其余条款的效力。
+                本声明仅用于解释许可证和提示使用风险，不增加用途限制，也不缩减 AGPL
+                或第三方许可证授予的权利。如摘要与许可证存在不一致，以相应许可证正文为准。后续声明更新不撤销既有版本依据许可证已经授予的权利。
               </p>
             </section>
           </div>
@@ -301,7 +307,7 @@ export default function LoginPage() {
                   setError("");
                 }}
               >
-                我已阅读并同意全部条款
+                我已阅读并了解全部内容
               </Button>
             </DialogClose>
           </DialogFooter>
