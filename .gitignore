@@ -1,0 +1,62 @@
+# backend
+/data/
+*.db
+*.db-wal
+*.db-shm
+config.json
+scheduler_state.json
+__pycache__/
+*.pyc
+*.pyo
+
+# frontend
+web/node_modules/
+# 前端依赖的项目内离线缓存（仅供本机重装依赖时复用，体积大、不提交）
+web/.npm-cache/
+web/.next/
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+*.local
+
+# development tools
+.playwright-mcp/
+.playwright-cli/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# docs
+/docs/
+
+# os
+.DS_Store
+Thumbs.db
+
+# claude code local state
+.claude/
+
+# 内嵌前端的单二进制产物
+/wsartex
+/server/webui/dist/
+
+# JWT 签名密钥（运行时生成，存项目根，绝不提交）
+/jwt.key
+
+# 调度器运行/模拟产生的事件日志（测试产物，不提交）
+*-events.csv
+
+# 本机真实对话、模型验证及开发操作记录（不随源码发布）
+/sidequestion/validation-2026-09-10.json
+/sidequestion/VALIDATION.md
+/sidequestion/CONTEXT_BUDGET.md
+
+# 本机环境变量与数据库导出
+.env
+.env.*
+!.env.example
+!.env.sample
+*.dump
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
