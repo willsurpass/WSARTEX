@@ -29,11 +29,11 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src=".github/readme/feature-norma.svg" alt="已内置 norma，开箱即用。" />
+      <img src=".github/readme/feature-norma-amber.svg" alt="已内置 norma，开箱即用。" />
       <p>norma 核心 SDK 源码已随项目提供，无需单独下载或接入。配置 LLM 后即可开始使用。</p>
     </td>
     <td width="50%" valign="top">
-      <img src=".github/readme/feature-easy-start.svg" alt="上手容易，启动简单。" />
+      <img src=".github/readme/feature-easy-start-amber.svg" alt="上手容易，启动简单。" />
       <p>运行 <code>start.py</code>，按提示完成依赖安装与构建，即可打开面板，无需手动构建前后端。</p>
     </td>
   </tr>
