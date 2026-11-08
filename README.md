@@ -2,9 +2,9 @@
 
 用于个人学习与本地隔离环境技术验证的 AI 自主渗透测试系统。原项目参考：**ARTEX**。
 
-![已内置 norma，开箱即用。](.github/readme/feature-norma.svg) 项目已包含 norma 核心 SDK 源码，无需单独下载或接入 norma。
+<img src=".github/readme/feature-norma.svg" alt="已内置 norma，开箱即用。" align="absmiddle" /> 项目已包含 norma 核心 SDK 源码，无需单独下载或接入 norma。
 
-![上手容易，启动简单。](.github/readme/feature-easy-start.svg) 装好 Python 后，运行 `start.py`，按提示完成依赖安装即可启动面板，无需手动构建前后端。
+<img src=".github/readme/feature-easy-start.svg" alt="上手容易，启动简单。" align="absmiddle" /> 装好 Python 后，运行 `start.py`，按提示完成依赖安装即可启动面板，无需手动构建前后端。
 
 本页为简单版使用说明，功能介绍、配置和技术架构见[详细版 README](README.detailed.md)。
 
