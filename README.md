@@ -8,6 +8,8 @@
   </picture>
 </h1>
 
+**简体中文** · [English](README.en.md)
+
 **开箱即用的 AI 自主渗透测试系统**
 
 本地部署 · 多 Agent 协作 · 资产探索 · 漏洞管理
