@@ -70,3 +70,7 @@ Open **System → Settings → Clear all data**, enter your current login passwo
 For features, configuration, updates, and architecture, see the [detailed README (Chinese)](README.detailed.md). This project is based on **ARTEX**. See [NOTICE.md](NOTICE.md) for upstream credits and third-party notices.
 
 Licensed under [AGPL-3.0-or-later](LICENSE). Start with an isolated local lab. Any real-world use must comply with applicable laws and obtain the necessary authorization.
+
+## Support and feedback
+
+If WSARTEX has helped you or inspired an idea, consider giving the project a **Star**. Bug reports and suggestions for improvement are always welcome in [Issues](https://github.com/willsurpass/WSARTEX/issues).

@@ -68,3 +68,7 @@
 功能介绍、配置、更新和技术架构见[详细版 README](README.detailed.md)。原项目参考 **ARTEX**，完整来源与第三方版权见 [NOTICE.md](NOTICE.md)。
 
 本项目采用 [AGPL-3.0-or-later](LICENSE)。建议在本地隔离环境中学习与验证，实际使用须遵守法律并取得必要授权。
+
+## 支持与反馈
+
+如果 WSARTEX 对你有所帮助，或为你带来了灵感，欢迎点亮一颗 **Star**。也欢迎通过 [Issues](https://github.com/willsurpass/WSARTEX/issues) 反馈问题、提出优化建议，一起让项目变得更好。
