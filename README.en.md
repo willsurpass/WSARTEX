@@ -29,11 +29,11 @@ Self-hosted · Multi-agent collaboration · Asset discovery · Vulnerability man
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src=".github/readme/feature-norma-en-4f7cac.svg" alt="norma included. Ready to use." />
+      <img src=".github/readme/feature-norma-en-2563eb.svg" alt="norma included. Ready to use." />
       <p>The norma SDK source is bundled with the project. No separate download or integration is needed. Configure your LLM to get started.</p>
     </td>
     <td width="50%" valign="top">
-      <img src=".github/readme/feature-easy-start-en-4f7cac.svg" alt="Easy setup. Simple startup." />
+      <img src=".github/readme/feature-easy-start-en-2563eb.svg" alt="Easy setup. Simple startup." />
       <p>Run <code>start.py</code> and follow the prompts to install dependencies and build the application. The launcher opens the panel for you.</p>
     </td>
   </tr>
