@@ -34,7 +34,7 @@
     </td>
     <td width="50%" valign="top">
       <img src=".github/readme/feature-easy-start-2563eb.svg" alt="上手容易，启动简单。" />
-      <p>运行 <code>start.py</code>，按提示完成依赖安装与构建，即可打开面板，无需手动构建前后端。</p>
+      <p><strong>无需 Docker，可直接部署。</strong> 运行 <code>start.py</code>，按提示安装依赖，启动器会构建前后端并打开面板。</p>
     </td>
   </tr>
 </table>
@@ -67,7 +67,9 @@
 
 功能介绍、配置、更新和技术架构见[详细版 README](README.detailed.md)。原项目参考 **ARTEX**，完整来源与第三方版权见 [NOTICE.md](NOTICE.md)。
 
-本项目采用 [AGPL-3.0-or-later](LICENSE)。建议在本地隔离环境中学习与验证，实际使用须遵守法律并取得必要授权。
+**WSARTEX 完全开源**，采用 [AGPL-3.0-or-later](LICENSE)。维护者承诺不在项目中植入后门，欢迎审阅源码、启动脚本和依赖。
+
+建议在本地隔离环境中学习与验证，实际使用须遵守法律并取得必要授权。
 
 ## 支持与反馈
 

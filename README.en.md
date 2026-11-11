@@ -34,7 +34,7 @@ Self-hosted · Multi-agent collaboration · Asset discovery · Vulnerability man
     </td>
     <td width="50%" valign="top">
       <img src=".github/readme/feature-easy-start-en-2563eb.svg" alt="Easy setup. Simple startup." />
-      <p>Run <code>start.py</code> and follow the prompts to install dependencies and build the application. The launcher opens the panel for you.</p>
+      <p><strong>Deploy directly without Docker.</strong> Run <code>start.py</code> and follow the prompts to install dependencies. The launcher builds the application and opens the panel.</p>
     </td>
   </tr>
 </table>
@@ -69,7 +69,9 @@ Open **System → Settings → Clear all data**, enter your current login passwo
 
 For features, configuration, updates, and architecture, see the [detailed README (Chinese)](README.detailed.md). This project is based on **ARTEX**. See [NOTICE.md](NOTICE.md) for upstream credits and third-party notices.
 
-Licensed under [AGPL-3.0-or-later](LICENSE). Start with an isolated local lab. Any real-world use must comply with applicable laws and obtain the necessary authorization.
+**WSARTEX is fully open source** under [AGPL-3.0-or-later](LICENSE). The maintainers commit to never adding backdoors. We welcome review of the source code, startup scripts, and dependencies.
+
+Start with an isolated local lab. Any real-world use must comply with applicable laws and obtain the necessary authorization.
 
 ## Support and feedback
 
