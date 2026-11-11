@@ -58,13 +58,6 @@ The panel currently uses Chinese labels. Menu names below are English translatio
 3. **Create a task** — Open **Tasks**, specify the target, scope, and constraints for your isolated local lab, then start the task.
 4. **Review results** — View the execution history, exploration graph, and findings in the task details.
 
-<details>
-<summary><strong>Clear data and restore the initial state</strong></summary>
-
-Open **System → Settings → Clear all data**, enter your current login password, and confirm. The application returns to the initial password setup state. Data is **permanently deleted, without being moved to the trash or backed up automatically**.
-
-</details>
-
 ## Documentation and credits
 
 For features, configuration, updates, and architecture, see the [detailed README (Chinese)](README.detailed.md). This project is based on **ARTEX**. See [NOTICE.md](NOTICE.md) for upstream credits and third-party notices.
